@@ -4,19 +4,17 @@ Un proyecto basado en [The Extreme Startup]('https://github.com/rchatley/extreme
 
 Los participantes tendrán que adaptar su código según la "demanda del mercado".
 
-El proyecto original está desarrollado con ruby y pero yo he querido "pasarlo" a NodeJS e incluso tiene una parte de Angular.
+El proyecto original está desarrollado con ruby, pero yo he querido "pasarlo" a NodeJS e incluso tiene una parte de Angular.
 
 Si quieres utilizar este proyecto intenta que los participantes no vean el código, ya que podrían hacer trampas.
 
 ## Como empezar
 
----
-
 ### Docker
 
 ```shell script
 docker build -t extreme_startup .
-docker run -d -p 80:3000 extreme_startup
+docker run -d -p 3001:3001 extreme_startup
 ```
 
 ### Nativo (sin docker)
