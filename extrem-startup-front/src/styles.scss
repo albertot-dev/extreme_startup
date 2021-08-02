@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+@import "colors";
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Roboto", Courier, monospace;
+  margin: 0;
+}
+
+*[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed !important;
+}
+
+:root {
+  --main-color: #aa076b;
+}

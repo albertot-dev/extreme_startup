@@ -1,0 +1,67 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form-new-player {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      input {
+        border-radius: 5px;
+        border: solid 1px var(--main-color);
+        width: 350px;
+        height: 32px;
+        padding: 4px;
+        margin-bottom: 10px;
+        &:focus-visible {
+          outline-color: var(--main-color);
+        }
+      }
+      button {
+        transition: all 0.2s ease-in-out;
+        background-color: var(--main-color);
+        border: solid 1px var(--main-color);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        height: 44px;
+        padding: 4px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .alert-wrap {
+    margin-top: 20px;
+    width: 360px;
+    .alert {
+      padding: 4px;
+      display: flex;
+      height: 48px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      color: whitesmoke;
+      &.alert-error {
+        background: #eb3349; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f45c43,
+          #eb3349
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #f45c43,
+          #eb3349
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      &.alert-success {
+        background-color: #52c11f;
+        background-image: linear-gradient(-45deg, #52c11f, #7ccc14);
+      }
+    }
+  }
+}

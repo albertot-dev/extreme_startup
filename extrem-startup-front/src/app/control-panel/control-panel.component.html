@@ -1,0 +1,10 @@
+<div class="main-container">
+    <h3>Panel de control</h3>
+    <h4 *ngIf="isStarted">Ronda actual: {{round}}</h4>
+    <div class="buttons-container">
+        <button *ngIf="!isStarted" (click)="start()">Iniciar</button>
+        <button *ngIf="isStarted" (click)="stop()">Parar</button>
+        <button (click)="nextRound()">Siguiente ronda</button>
+        <button (click)="reset()">Reset</button>
+    </div>
+</div>

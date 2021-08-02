@@ -1,0 +1,18 @@
+<div class="main-container">
+    <h3>Nuevo jugador</h3>
+    <div class="form-new-player">
+        <form [formGroup]="newplayerForm" (ngSubmit)="onSubmit()">
+            <label for="name-player">Nombre jugador/equipo</label>
+            <input id="name-player" formControlName="name" name="name-player" />
+            <label for="host-player">IP servidor</label>
+            <input id="host-player" formControlName="host" name="host-player" />
+            <button [disabled]="newplayerForm.invalid" type="submit">Inscribir</button>
+        </form>
+    </div>
+    <div class="alert-wrap" *ngIf="show" [@toggle]="show">
+        <div class="alert" [ngClass]="{'alert-success': addPlayerSuccess, 'alert-error': !addPlayerSuccess}">
+            {{addPlayerSuccess ? 'Jugador inscrito correctamente' : 'Ha ocurrido un error al inscribir al
+            jugador/equipo'}}</div>
+    </div>
+
+</div>

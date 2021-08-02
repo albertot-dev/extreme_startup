@@ -1,0 +1,54 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  .auto-refresh {
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    padding: 4px;
+    &:hover {
+      cursor: pointer;
+    }
+    svg {
+      width: 25px;
+
+      &.spin {
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+  table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) {
+    background: #eee;
+  }
+  th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+  }
+  td,
+  th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

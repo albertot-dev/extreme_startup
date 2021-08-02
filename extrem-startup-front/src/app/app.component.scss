@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  height: 48px;
+  background: #aa076b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #aa076b,
+    #61045f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #aa076b,
+    #61045f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  gap: 20px;
+
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+  .item-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .title {
+    color: white;
+    font-size: 30px;
+  }
+  .active {
+    background: white;
+    color: #aa076b !important;
+  }
+}
